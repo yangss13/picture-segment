@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Image Segment",
+  "version": "0.0.1",
+  "description": "Segments Image and Remove extraneous data",
+  "icons": { "16": "images/heel16.png",
+           "48": "images/heel48.png",
+          "128": "images/heel128.png" },
+  "content_scripts": [
+    {
+    "matches": ["*://*/*"],
+    "js": ["content.js"],
+    "run_at":"document_end"
+
+  }
+]
+
+}
